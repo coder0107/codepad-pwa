@@ -1,10 +1,10 @@
-# CodePad - A Chrome OS multi-language text editor
+# CodePad - A Web multi-language text editor
 
 ![gghBeJ/codepad.jpg](https://image.ibb.co/gghBeJ/codepad.jpg)
 
 ## Note
 
-Code Pad IDE is a free and lightweight IDE/text editor built for Chrome operating system. Code Pad allows you to write code and build projects in an easy way right on your Chrome OS device.
+Code Pad IDE is a free and lightweight IDE/text editor built for the web. Code Pad allows you to write code and build projects in an easy way right from your web browser.
 
 The IDE supports a variety of different languages!
 
@@ -22,30 +22,18 @@ Bash, C/C++, CoffeeScript, CSS3, Dockerfile, GitIgnore, GoLang, HTML5, Java, Jav
  - Syntax highlighting
  - Code auto-completion & hinting
  - Code folding
- - Works with Google Drive or Local storage
- - Centralized clipboard with ChromeOS
+ - Works with files on your device
  - Automatic indent and outdent
  - Tweakable interface
  - Key bindings
  - Drag & drop files with your mouse
  - Toggle between soft tabs & real tabs
  - Line wrapping
- - Runs in fullscreen
+ - Can run in fullscreen
  - Cut, copy & paste functionality
 
 ## Installation
 
-**Chromebook**
+**Web**
 
-The Code Pad IDE can be installed directly from the Chrome store here: 
-https://chrome.google.com/webstore/detail/code-pad-ide/adaepfiocmagdimjecpifghcgfjlfmkh
-
-**Other devices**
-
-Alternatively, if you're not running a Chrome OS device just follow these steps:
-                                              
-  - Clone/download this repo to your local machine
-  - Open Google Chrome browser
-  - Enter [chrome://extensions](chrome://extensions) in the URL bar and enable Developer Mode.
-  - While still on the extensions page, click the button marked `Load unpacked extension...` and select the directory containing the Code Pad manifest.json file.
-  - The app should be 'installed' on your device and should be accessible via your start menu or programs folder
+The Code Pad IDE can be installed directly at [coder0107.github.io/codepad-pwa/](https://coder0107.github.io/codepad-pwa/).

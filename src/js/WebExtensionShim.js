@@ -23,10 +23,11 @@ if(window.manifestJson != null && window.manifestJson != undefined && typeof win
     localManifestJson = window.manifestJson;
 } else {
     (async function () {
-        let response = await fetch("/manifest-old.json");
+        let response = await fetch("manifest-old.json");
         let json = await response.json();
 
-        localManifestJson = await json;
+        window.manifestJson = localManifestJson = await json;
+        console.log(await json);
     })();
 }
 var chrome, browser;

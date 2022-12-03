@@ -1,3 +1,9 @@
+var fakeFunc = {
+    init: function(x) {
+        console.error(x);
+    }
+}
+
 $(document).ready(function () {
 
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -8,8 +14,11 @@ $(document).ready(function () {
     let Modals = new ModalsHandler();
     let IdeSettings = new IdeSettingsHandler();
     let Sidebar = new SidebarHandler();
+
     let Notifications = new NotificationsHandler();
+    //let Notifications = fakeFunc;
     let Files = new FilesHandler();
+    //let Files = fakeFunc;
 
     Notifications.init();
     Files.init(Notifications);
@@ -211,9 +220,12 @@ $(document).ready(function () {
     });
 
     // User opens file from outside app
+    /* Todo: Make PWA able to be open files from OS or native OS file explorer.
     chrome.app.runtime.onLaunched.addListener(function (launchData) {
         Editors.handleLaunchData(launchData.items);
-    });
+    });*/
+    // Open default page
+    Editors.handleLaunchData([]);
 
 
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////

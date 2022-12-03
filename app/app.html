@@ -63,7 +63,7 @@
           href="vendor/animate/animate.css"/>
 
     <link rel="stylesheet"
-          href="src/css/gfonts.css?v=dbb4e55"/>
+          href="src/css/gfonts.css"/>
     <link rel="stylesheet"
           href="src/css/main.css"/>
 
@@ -71,7 +71,7 @@
           href="src/img/codepad.256.png"
           type="image/png">
     <link rel="manifest"
-          href="app/manifest.json?v=0.0.2">
+          href="app/manifest.json?v=0.0.1">
 
     <title>CodePad</title>
 </head>
@@ -367,7 +367,7 @@
             <a href="https://github.com/andrewbrg/codepad-chrome-app"
                target="_blank"
                class="nav-logo">
-                <img src="src/img/codepad.64.png"
+                <img src="/src/img/codepad.64.png"
                      height="28"/>
             </a>
         </div>
@@ -526,30 +526,23 @@
 <script src="vendor/bootstrap-menu/bootstrap-menu.min.js"></script>
 
 <!-- Select 2 -->
-<script src="/vendor/select-2/select2.min.js"></script>
+<script src="vendor/select-2/select2.min.js"></script>
 
 <!--<script src="https://cdn.jsdelivr.net/npm/localforage@1.10.0/dist/localforage.nopromises.min.js"></script>
 <script src="/src/js/chromeStorage.js?v=0.0.3"></script>-->
-<script src="/src/js/WebExtensionShim.js?v=0.2.0"></script>
+<script src="src/js/WebExtensionShim.js?v=0.2.0"></script>
 
 <!-- Native scripts -->
-<script src="src/js/handlers/files.js"></script>
-<script src="src/js/handlers/notifications.js"></script>
+<!-- The following need to either be implemented in the manifest or service worker file or they are not needed. -->
+<script src="src/js/handlers/files.js?v=0.0.2"></script>
+<script src="src/js/handlers/notifications.js?v=0.0.2"></script>
+<!-- -->
 <script src="src/js/handlers/ide.settings.js"></script>
 <script src="src/js/handlers/sidebar.js"></script>
-<script src="src/js/handlers/editors.js"></script>
+<script src="src/js/handlers/editors.js?v=0.0.4"></script>
 <script src="src/js/handlers/modals.js"></script>
-<!-- The following need to either be implemented in the manifest or service worker file or they are not needed. -->
-<script src="/src/js/handlers/files.js?v=0.0.2"></script>
-<script src="/src/js/handlers/notifications.js?v=0.0.2"></script>
-<!-- -->
-<script src="/src/js/handlers/ide.settings.js"></script>
-<script src="/src/js/handlers/sidebar.js"></script>
-<script src="/src/js/handlers/editors.js?v=0.0.4"></script>
-<script src="/src/js/handlers/modals.js"></script>
 
 <!-- Events script -->
-<script src="src/js/events.js"></script>
-<script src="/src/js/events.js?v=0.0.10"></script>
+<script src="src/js/events.js?v=0.0.10"></script>
 </body>
 </html>

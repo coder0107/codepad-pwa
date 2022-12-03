@@ -1,0 +1,42 @@
+{
+  "name": "Code Pad Editor",
+  "short_name": "CodePad",
+  "theme_color": "#e93e32",
+  "background_color": "#282828",
+  "display": "standalone",
+  "orientation": "landscape",
+  "scope": "/app/",
+  "start_url": "/app/app.html",
+  "icons": [
+    {
+      "src": "/src/img/codepad.16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/src/img/codepad.32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/src/img/codepad.64.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "/src/img/codepad.96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "/src/img/codepad.128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "/src/img/codepad.256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    }
+  ]
+}

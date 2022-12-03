@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /app/
+Disallow: /src/
+Disallow: /vendor/
+Disallow: /.gitignore
+Disallow: /LICENSE
+Disallow: /manifest-old.json
+

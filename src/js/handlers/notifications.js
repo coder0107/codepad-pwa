@@ -11,6 +11,7 @@ let NotificationsHandler = function () {
 
         let that = this;
 
+        /* When a PWA updates it might be nice to have something like this but not required to work.
         chrome.storage.local.get(this.versionKey, function (version) {
 
             let currentVer = chrome.runtime.getManifest().version;
@@ -38,8 +39,9 @@ let NotificationsHandler = function () {
                     chrome.storage.local.set(obj);
                 });
             }
-        });
+        });*/
 
+        /* The following is not even needed for a PWA.
         window.setTimeout(function () {
             chrome.storage.local.get(that.requestRateKey, function (requested) {
 
@@ -83,7 +85,7 @@ let NotificationsHandler = function () {
             if (notificationId === that.ratingReminderId) {
                 window.open('https://chrome.google.com/webstore/detail/code-pad-ide/adaepfiocmagdimjecpifghcgfjlfmkh/reviews');
             }
-        });
+        });*/
     };
 
     this.notify = function (type, title, message) {

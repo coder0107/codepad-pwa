@@ -29,11 +29,9 @@ Bash, C/C++, CoffeeScript, CSS3, Dockerfile, GitIgnore, GoLang, HTML5, Java, Jav
  - Drag & drop files with your mouse
  - Toggle between soft tabs & real tabs
  - Line wrapping
- - Can run in fullscreen
- - Cut, copy & paste functionality
 
 ## Installation
 
 **Web**
 
-The Code Pad IDE can be installed directly at [coder0107.github.io/codepad-pwa/](https://coder0107.github.io/codepad-pwa/).
+The Code Pad IDE can be installed by clicking the install button at [coder0107.github.io/codepad-pwa/](https://coder0107.github.io/codepad-pwa/).

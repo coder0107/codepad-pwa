@@ -46,7 +46,7 @@ let EditorsHandler = function () {
         let that = this;
         let deferred = $.Deferred();
 
-        $.get('/src/settings/ace.defaults.json', function (data) {
+        $.get('src/settings/ace.defaults.json', function (data) {
 
             data = that.isJsonString(data) ? JSON.parse(data) : data;
 
@@ -711,7 +711,7 @@ let EditorsHandler = function () {
         let deferred = $.Deferred();
 
         if (typeof ext !== typeof undefined) {
-            $.get('/src/html/templates/' + ext + '.tpl').done(function (data) {
+            $.get('src/html/templates/' + ext + '.tpl').done(function (data) {
                 deferred.resolve(data);
             }).fail(function () {
                 deferred.resolve('');
@@ -881,7 +881,7 @@ let EditorsHandler = function () {
 
         let deferred = $.Deferred();
 
-        $.get('/src/settings/ace.modes.json').done(function (data) {
+        $.get('src/settings/ace.modes.json').done(function (data) {
             deferred.resolve(data);
         });
 

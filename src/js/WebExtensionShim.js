@@ -22,12 +22,30 @@ let localManifestJson = null;
 if(window.manifestJson != null && window.manifestJson != undefined && typeof window.manifestJson == "object") {
     localManifestJson = window.manifestJson;
 } else {
-    (async function () {
-        let response = await fetch("manifest-old.json");
+    (/*async*/ function () {
+        /*let response = await fetch("manifest-old.json");
         let json = await response.json();
 
         window.manifestJson = localManifestJson = await json;
-        console.log(await json);
+        console.log(await json);*/
+
+        const xhr = new XMLHttpRequest();
+        xhr.open("GET", "manifest-old.json", false);
+        xhr.onload = _e => {
+            if (xhr.readyState === 4) {
+                if (xhr.status === 200) {
+                    window.manifestJson = localManifestJson = JSON.parse(xhr.responseText);
+
+                    console.log(localManifestJson);
+                } else {
+                    console.error(xhr.statusText);
+                }
+            }
+        };
+        xhr.onerror = _e => {
+            console.error(xhr.statusText);
+        };
+        xhr.send(null);
     })();
 }
 var chrome, browser;

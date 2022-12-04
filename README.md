@@ -1,6 +1,10 @@
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
 # CodePad - A Web multi-language text editor
 
 ![gghBeJ/codepad.jpg](https://image.ibb.co/gghBeJ/codepad.jpg)
+
+If you are looking for the web app then visit [https://coder0107.github.io/codepad-pwa/app/app.html](app/app.html).
 
 ## Note
 
@@ -32,6 +36,6 @@ Bash, C/C++, CoffeeScript, CSS3, Dockerfile, GitIgnore, GoLang, HTML5, Java, Jav
 
 ## Installation
 
-**Web**
+### Web
 
 The Code Pad IDE can be installed by clicking the install button at [coder0107.github.io/codepad-pwa/](https://coder0107.github.io/codepad-pwa/).
